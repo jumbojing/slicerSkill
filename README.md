@@ -63,3 +63,12 @@
 | `SKILL.md` | 给 AI 看的指令手册，告诉它去哪里搜索 Slicer 的资料。 |
 | `README.md` | 就是你现在看的这份说明文档。 |
 | `scripts/slicer-mcp-server.py` | （可选）运行在 Slicer 内部的服务器脚本，用于让 AI 直接操控 Slicer。 |
+
+## 是这么做出来的:
+
+根据: https://github.com/pieper/slicer-skill
+
+`opencode` + `Gemini3.1`
+
+[EOF]
+
