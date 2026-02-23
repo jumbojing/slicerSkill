@@ -28,7 +28,7 @@
 
 ### 使用场景 2：让 AI 直接操控你运行中的 Slicer（高阶玩法）
 
-这个文件夹里包含了一个名为 `slicer-mcp-server.py` (from: https://github.com/pieper/slicer-skill/blob/main/slicer-mcp-server.py)的脚本。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
+这个文件夹里包含了一个名为 `slicer-mcp-server.py` (from: https://github.com/pieper/slicer-skill/blob/main/slicer-mcp-server.py) 的脚本。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
 
 **操作步骤：**
 
