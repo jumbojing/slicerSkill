@@ -1,6 +1,6 @@
 # Slicer AI 技能 (slicer-skill)
 
-这个文件夹是一个专门给 AI（如 Claude、OpenCode、Cursor）看的 **“Slicer 开发说明书”** 。
+这个文件夹是一个专门给 AI（如 Claude、OpenCode、Cursor）看的**“Slicer 开发说明书”**。
 
 它的作用是告诉 AI：**“当用户问你关于 3D Slicer 的问题时，不要瞎猜代码，去官方文档和 GitHub 源代码里搜索准确的写法。”**
 
@@ -28,14 +28,14 @@
 
 ### 使用场景 2：让 AI 直接操控你运行中的 Slicer（高阶玩法）
 
-这个文件夹里包含了一个名为 `slicer-mcp-server.py` (from: https://github.com/pieper/slicer-skill/blob/main/slicer-mcp-server.py) 的脚本。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
+这个文件夹的 `scripts/` 目录下包含了一个名为 `slicer-mcp-server.py` 的脚本。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
 
 **操作步骤：**
 
 1. **打开你的 3D Slicer 软件。**
-2. **运行服务器：** 打开 Slicer 的 Python 控制台（Python Console），将 `slicer-mcp-server.py` 拖进去运行，或者输入以下代码回车：
+2. **运行服务器：** 打开 Slicer 的 Python 控制台（Python Console），将 `scripts/slicer-mcp-server.py` 拖进去运行，或者输入以下代码回车：
    ```python
-   exec(open("/你的项目路径/.opencode/skills/slicer-skill/slicer-mcp-server.py").read())
+   exec(open("/你的项目路径/.opencode/skills/slicer-skill/scripts/slicer-mcp-server.py").read())
    ```
    *（运行后，Slicer 就变成了一个可以被 AI 控制的服务器）*
 3. **配置你的 AI 客户端：** 在你的 AI 编辑器（例如 OpenCode / Claude Code）的 `.mcp.json` 中添加：
@@ -62,12 +62,4 @@
 |------|------|
 | `SKILL.md` | 给 AI 看的指令手册，告诉它去哪里搜索 Slicer 的资料。 |
 | `README.md` | 就是你现在看的这份说明文档。 |
-| `slicer-mcp-server.py` | （可选）运行在 Slicer 内部的服务器脚本，用于让 AI 直接操控 Slicer。 |
-
-## 这么做出来的:
-
-参考: https://github.com/pieper/slicer-skill
-
-用`opencode` + `Gemini-3.1`
-
-
+| `scripts/slicer-mcp-server.py` | （可选）运行在 Slicer 内部的服务器脚本，用于让 AI 直接操控 Slicer。 |
