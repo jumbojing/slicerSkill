@@ -1,6 +1,6 @@
 # Slicer AI 技能 (slicer-skill)
 
-这个文件夹是一个专门给 AI（如 Claude、OpenCode、Cursor）看的**“Slicer 开发说明书”**。
+这个文件夹是一个专门给 AI（如 Claude、OpenCode、Cursor）看的 **“Slicer 开发说明书”** 。
 
 它的作用是告诉 AI：**“当用户问你关于 3D Slicer 的问题时，不要瞎猜代码，去官方文档和 GitHub 源代码里搜索准确的写法。”**
 
