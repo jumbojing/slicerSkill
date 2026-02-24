@@ -28,7 +28,7 @@
 
 ### 使用场景 2：让 AI 直接操控你运行中的 Slicer（高阶玩法）
 
-这个文件夹的 `scripts/` 目录下包含了一个名为 `slicer-mcp-server.py` 的脚本(From: https://github.com/pieper/slicer-skill/blob/main/slicer-mcp-server.py)。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
+这个文件夹的 `scripts/` 目录下包含了一个名为 `slicer-mcp-server.py` 的脚本(From: https://github.com/pieper/slicer-skill/blob/main/slicer-mcp-server.py )。它可以启动一个本地服务器，让 AI 能直接读取你 Slicer 里的数据，甚至直接在里面执行代码。
 
 **操作步骤：**
 
@@ -53,6 +53,10 @@
    - *"帮我看看我现在 Slicer 里有几个 Volume 节点？"*
    - *"把当前 3D 视图里的模型颜色改成红色。"*
    - *"读取名为 'CT' 的图像，把它转换成 numpy 数组算一下平均值。"*
+  
+## update:
+
+又做了一个小更新, 让 AI 直接运行 `MCP` , 简化了操作步骤, 你可以直接通过 **Prompt** 控制操作 `Slicer` 了...
 
 ---
 
